@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:listSelector="@drawable/selector" >
+
+    <View
+        android:id="@+id/eView"
+        android:layout_width="5dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#a20025" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/eLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/eView"
+        android:adjustViewBounds="true"
+        android:background="#d8d8d8"
+        android:scaleType="centerInside"
+        android:src="@drawable/bulb72" />
+
+    <TextView
+        android:id="@+id/eName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/eTime"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/eLogo"
+        android:text="TextView"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eName"
+        android:layout_toRightOf="@+id/eLogo"
+        android:text="TextView"
+        android:textColor="#a20025"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/eBell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eLogo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:src="@drawable/ic_action_rating_not_important" />
+
+    <TextView
+        android:id="@+id/eTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eCategory"
+        android:layout_toLeftOf="@+id/eBell"
+        android:text="TextView"
+        android:textColor="#7a7a7a"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/eVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eTime"
+        android:layout_toLeftOf="@+id/eBell"
+        android:text="TextView"
+        android:textColor="#7a7a7a"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
